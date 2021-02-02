@@ -2,8 +2,10 @@
 
 name: Docker tomcat-demo
 
-on: [push]
-
+on:
+  push:
+    branches:
+      - master
 jobs:
   build:
     runs-on: ubuntu-20.04
